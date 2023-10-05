@@ -86,11 +86,11 @@ public class Funcionario {
         return horario;
     }
 
-    public void setHorario(LocalTime horario)  {
+    public void setHorario(LocalTime horario) {
         this.horario = horario;
     }
 
-    public void setHorario(String horario) throws DateTimeParseException   {
+    public void setHorario(String horario) throws DateTimeParseException {
         this.horario = LocalTime.parse(horario, hora);
     }
 

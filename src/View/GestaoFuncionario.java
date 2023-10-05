@@ -19,6 +19,7 @@ public class GestaoFuncionario {
       System.out.println("(E)xibir");
       System.out.println("(R)emover");
       System.out.println("(A)tualizar");
+      System.out.println("(L)istar");
       System.out.println("(S)air");
       char opcao = input.nextLine().toUpperCase().charAt(0);
       if (opcao == 'C') {
@@ -29,6 +30,8 @@ public class GestaoFuncionario {
         remover();
       } else if (opcao == 'A') {
         atualizar();
+      } else if (opcao == 'L') {
+        listar();
       } else if (opcao == 'S') {
         System.out.println("Até Breve ");
         break;
@@ -92,7 +95,7 @@ public class GestaoFuncionario {
       System.out.println("Matrícula: " + func.getMatricula());
       System.out.println("Admissão: " + func.getAdmissao());
       System.out.println("Demissão: " + func.getDemissao());
-      System.out.println("Salário: " + func.getSalario());
+      System.out.println("Salário: " + func.getSalarioFormatado());
       System.out.println("Hora: " + func.getHorario());
       System.out.println("ID: " + func.getId());
     } else {
